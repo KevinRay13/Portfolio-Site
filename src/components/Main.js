@@ -1,70 +1,270 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+//site pics
+//import pic01 from '../images/pic01.jpg'
+//import pic02 from '../images/Givehome.png'
+import pic03 from '../images/Giveshop.png'
+import welltreadhome from '../images/welltreadhome.png'
+import welltreadsearch from '../images/welltreadsearch.png'
+import trailmap from '../images/trailmap.png'
+import profile from '../images/headshot.jpg'
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+//logos
+import gatsby from '../images/gatsby-icon.png'
+import js from '../images/JS-logo.png'
+import react from '../images/react.png'
+import node from '../images/nodejs.png'
+import css from '../images/css3.png'
+import materialui from '../images/matui.png'
+import postresql from '../images/postgresql.png'
+import git from '../images/Git.png'
+import github from '../images/github.svg'
+import html from '../images/html5.png'
+import express from '../images/express.png'
+import sass from '../images/sass.png'
+import redux from '../images/redux.png'
 
 class Main extends React.Component {
   render() {
-
-    let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
+    let close = (
+      <div
+        className="close"
+        onClick={() => {
+          this.props.onCloseArticle()
+        }}
+      />
+    )
 
     return (
-      <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
+      <div
+        ref={this.props.setWrapperRef}
+        id="main"
+        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
+      >
+        <article
+          id="intro"
+          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h1 className="major">Skills</h1>
 
-        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Intro</h2>
-          <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <div className="skillCardTitle">
+            <h2>JavaScript</h2>
+          </div>
+          <div className="skillCard">
+            <div>
+              <img src={gatsby} alt="gatsby-logo" className="logos" />
+              <p id="pTag">Gatsby</p>
+            </div>
+            <div>
+              <img src={js} alt="js-logo" className="logos" />
+              <p id="pTag">Javascript</p>
+            </div>
+            <div>
+              <img src={react} alt="react-logo" className="logos" />
+              <p id="pTag">React</p>
+            </div>
+            <div>
+              <img src={redux} alt="redux-logo" className="logos" />
+              <p id="pTag">Redux</p>
+            </div>
+            <div>
+              <img src={node} alt="node-logo" className="logos" />
+              <p id="pTag">Node</p>
+            </div>
+            <div>
+              <img src={express} alt="express-logo" className="logos" />
+              <p id="pTag">Express</p>
+            </div>
+          </div>
+          <div className="skillCardTitle">
+            <h2>HTML & CSS</h2>
+          </div>
+          <div className="skillCard">
+            <div>
+              <img src={html} alt="html-logo" className="logos" />
+              <p id="pTag">HTML5</p>
+            </div>
+            <div>
+              <img src={react} alt="react-logo" className="logos" />
+              <p id="pTag">JSX</p>
+            </div>
+            <div>
+              <img src={css} alt="css-logo" className="logos" />
+              <p id="pTag">CSS3</p>
+            </div>
+            <div>
+              <img src={sass} alt="sass-logo" className="logos" />
+              <p id="pTag">SASS</p>
+            </div>
+            <div>
+              <img src={materialui} alt="materialui-logo" className="logos" />
+              <p id="pTag">Material-UI</p>
+            </div>
+          </div>
+          <div className="skillCardTitle">
+            <h2>Other</h2>
+          </div>
+          <div className="skillCard">
+            <div>
+              <img src={postresql} alt="postgresql-logo" className="logos" />
+              <p id="pTag">PostreSQL</p>
+            </div>
+            <div>
+              <img src={git} alt="git-logo" className="logos" />
+              <p id="pTag">Git</p>
+            </div>
+            <div className="skillCardItems">
+              <img src={github} alt="github-logo" className="logos" />
+              <p id="pTag">GitHub</p>
+            </div>
+          </div>
           {close}
         </article>
 
-        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Work</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+        <article
+          id="work"
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h1 className="major">Projects</h1>
+          <h3 id="pTag"> E-Commerce Web Application</h3>
+          <div className="imgContainer">
+            <img className="images" src={pic03} alt="" />
+          </div>
+
+          <p id="pTag">
+            <h3>
+              <div className="links">
+                <a href="http://www.GiveHats.live" id="link">
+                  www.GiveHats.live
+                </a>
+
+                <a href="https://github.com/KevinRay13/give" id="link">
+                  GitHub Repository
+                </a>
+              </div>
+            </h3>
+            <b>Technologies Implemented:</b> <br />
+            React | Redux | Express | Node | PostgreSQL | SASS <br />
+            <div className="alignLeft">
+              <b> Accomplishments:</b>
+              <br /> - Implemented Redux to handle user persistence and shopping
+              cart
+              <br /> - Prioritized responsive design with SASS and Flexbox
+              <br /> - Conditionally rendered admin view utilizing Express
+              Sessions
+              <br /> - Learned PostgreSQL, created databases for users and
+              merchandise
+              <br /> - Full CRUD web application
+            </div>
+          </p>
+          <h3 id="pTag"> Mobile Responsive Web Application</h3>
+          <div className="imgContainer">
+            <img className="imagesTread" src={welltreadhome} alt="" />
+            <img className="imagesTread" src={welltreadsearch} alt="" />
+            <img className="imagesTread" src={trailmap} alt="" />
+          </div>
+
+          <p id="pTag">
+            <h3>
+              <div className="links">
+                <a href="https://welltread.co" id="link">
+                  www.WellTread.co
+                </a>
+
+                <a href="https://github.com/well-tread/well-tread" id="link">
+                  GitHub Repository
+                </a>
+              </div>
+            </h3>
+            <b>Technologies Implemented:</b> <br />
+            React | Redux | Node | Material UI | TypeScript | GitHub | Git{' '}
+            <br />
+            <div className="alignLeft">
+              <b> Accomplishments:</b>
+              <br /> - Built out backend server to fetch trails & weather from
+              multiple API's
+              <br /> - Implemented geolocation to find top five trails and three
+              day weather forecast
+              <br /> - Succesfully worked with a team by utilizing GitHub and
+              Agile methods
+              <br /> - Utilized TypeScript for readability of data
+            </div>
+          </p>
           {close}
         </article>
 
-        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+        <article
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">About Me</h2>
+          <div className="imgContainer" style={{ marginBottom: '3em' }}>
+            <img
+              className="profile"
+              src={profile}
+              alt="pic of me"
+              style={{ height: '15em', border: '2px solid white' }}
+            />
+          </div>
+          <h3>I am A Front-End developer with a craving for knowledge.</h3>
+          <p>
+            I have always sought out opportunities and challenges that are
+            meaningful to me. As a web developer I use my attention to detail,
+            desire to create, and thirst for knowledge to push me to the next
+            level. When I'm not coding catch me at the local bowling alley,
+            small music venue, or possibly cruising the single tracks on my
+            mountain bike. Also worth noting, I am a breakfast taco aficionado.
+          </p>
           {close}
         </article>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article
+          id="contact"
+          className={`${this.props.article === 'contact' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
+
           <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li id="li">
+              <a
+                href="mailto:kevinraye13@gmail.com"
+                className="icon fa-envelope"
+              >
+                <span className="label">Email</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kevin-edmondson/"
+                className="icon fa-linkedin"
+              >
+                <span className="label">linkedin</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/KevinRay13"
+                className="icon fa-github"
+                id="ic"
+              >
+                <span className="label">GitHub</span>
+              </a>
+            </li>
           </ul>
           {close}
         </article>
-
       </div>
     )
   }
