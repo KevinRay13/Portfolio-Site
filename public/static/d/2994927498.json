@@ -1,1 +1,5 @@
-{"data":{"site":{"siteMetadata":{"title":"Gatsby Starter - Dimension V2"}}}}
+{
+  "data": {
+    "site": { "siteMetadata": { "title": "Kevin Edmondson - Portfolio" } }
+  }
+}
