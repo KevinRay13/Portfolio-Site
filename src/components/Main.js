@@ -163,7 +163,7 @@ class Main extends React.Component {
               <br /> - Full CRUD web application
             </div>
           </p>
-          <h3 id="pTag"> Mobile Responsive Web Application</h3>
+          <h3 id="centerMe"> Mobile Responsive Web Application</h3>
           <div className="imgContainer">
             <img className="imagesTread" src={welltreadhome} alt="" />
             <img className="imagesTread" src={welltreadsearch} alt="" />
