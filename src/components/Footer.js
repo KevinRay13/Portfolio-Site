@@ -12,4 +12,4 @@ Footer.propTypes = {
 }
 
 export default Footer
-//comple
+//comp
