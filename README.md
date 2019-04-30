@@ -10,6 +10,6 @@ React | HTML | CSS | Gatsby
 ## Screenshots
 ### Home
 ![Home](/portfoliohome.png)
-### Search Results
+### Skills tab
 ![Shop](/portfolioskills.png)
 
