@@ -9,7 +9,7 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>Kevin Edmondson</h1>
-        <p style={{ fontSize: '1em' }}>Full stack web developer</p>
+        <p style={{ fontSize: '1em' }}>Web Developer - Software Engineer</p>
       </div>
     </div>
     <nav>
