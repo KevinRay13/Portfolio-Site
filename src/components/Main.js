@@ -132,7 +132,10 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h1 className="major">Projects</h1>
-          <h3 id="pTag"> E-Commerce Web Application</h3>
+          <h3 id="pTag" className="subTitle">
+            {' '}
+            E-Commerce Web Application
+          </h3>
           <div className="imgContainer">
             <img className="images" src={pic03} alt="" />
           </div>
@@ -163,7 +166,10 @@ class Main extends React.Component {
               <br /> - Full CRUD web application
             </div>
           </p>
-          <h3 id="centerMe"> Mobile Responsive Web Application</h3>
+          <h3 id="pTag" className="subTitle">
+            {' '}
+            Mobile Responsive Web Application
+          </h3>
           <div className="imgContainer">
             <img className="imagesTread" src={welltreadhome} alt="" />
             <img className="imagesTread" src={welltreadsearch} alt="" />
@@ -215,14 +221,14 @@ class Main extends React.Component {
               style={{ height: '15em', border: '2px solid white' }}
             />
           </div>
-          <h3>I am A Front-End developer with a craving for knowledge.</h3>
+          <h3>
+            {' '}
+            I am a Full-Stack Web Developer creating business solutions.{' '}
+          </h3>
           <p>
-            I have always sought out opportunities and challenges that are
-            meaningful to me. As a web developer I use my attention to detail,
-            desire to create, and thirst for knowledge to push me to the next
-            level. When I'm not coding catch me at the local bowling alley,
-            small music venue, or possibly cruising the single tracks on my
-            mountain bike. Also worth noting, I am a breakfast taco aficionado.
+            I draw inspiration from current design trends and the world around
+            me. Using that inspiritaion I create sleek user interfaces and an
+            elegant layout for better user experience.
           </p>
           {close}
         </article>
