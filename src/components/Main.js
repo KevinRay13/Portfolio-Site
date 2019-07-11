@@ -132,7 +132,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h1 className="major">Projects</h1>
-          <h3 id="pTag" className="subTitle">
+          <h3 id="pTag2" className="subTitle">
             {' '}
             E-Commerce Web Application
           </h3>
