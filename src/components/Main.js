@@ -167,7 +167,6 @@ class Main extends React.Component {
             </div>
           </p>
           <h3 id="pTag" className="subTitle">
-            {' '}
             Mobile Responsive Web Application
           </h3>
           <div className="imgContainer">
