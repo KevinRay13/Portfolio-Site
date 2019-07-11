@@ -132,75 +132,79 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h1 className="major">Projects</h1>
-          <h3 id="pTag" className="subTitle">
-            {' '}
-            E-Commerce Web Application
-          </h3>
-          <div className="imgContainer">
-            <img className="images" src={pic03} alt="" />
-          </div>
-
-          <p id="pTag">
-            <h3>
-              <div className="links">
-                <a href="http://www.GiveHats.live" id="link">
-                  www.GiveHats.live
-                </a>
-
-                <a href="https://github.com/KevinRay13/give" id="link">
-                  GitHub Repository
-                </a>
-              </div>
+          <div>
+            <h3 id="pTag" className="subTitle">
+              {' '}
+              E-Commerce Web Application
             </h3>
-            <b>Technologies Implemented:</b> <br />
-            React | Redux | Express | Node | PostgreSQL | SASS <br />
-            <div className="alignLeft">
-              <b> Accomplishments:</b>
-              <br /> - Implemented Redux to handle user persistence and shopping
-              cart
-              <br /> - Prioritized responsive design with SASS and Flexbox
-              <br /> - Conditionally rendered admin view utilizing Express
-              Sessions
-              <br /> - Learned PostgreSQL, created databases for users and
-              merchandise
-              <br /> - Full CRUD web application
+            <div className="imgContainer">
+              <img className="images" src={pic03} alt="" />
             </div>
-          </p>
-          <h3 className="subTitle" id="pTag2">
-            Mobile Responsive Web Application
-          </h3>
-          <div className="imgContainer">
-            <img className="imagesTread" src={welltreadhome} alt="" />
-            <img className="imagesTread" src={welltreadsearch} alt="" />
-            <img className="imagesTread" src={trailmap} alt="" />
-          </div>
 
-          <p id="pTag">
-            <h3>
-              <div className="links">
-                <a href="https://welltread.co" id="link">
-                  www.WellTread.co
-                </a>
+            <p id="pTag">
+              <h3>
+                <div className="links">
+                  <a href="http://www.GiveHats.live" id="link">
+                    www.GiveHats.live
+                  </a>
 
-                <a href="https://github.com/well-tread/well-tread" id="link">
-                  GitHub Repository
-                </a>
+                  <a href="https://github.com/KevinRay13/give" id="link">
+                    GitHub Repository
+                  </a>
+                </div>
+              </h3>
+              <b>Technologies Implemented:</b> <br />
+              React | Redux | Express | Node | PostgreSQL | SASS <br />
+              <div className="alignLeft">
+                <b> Accomplishments:</b>
+                <br /> - Implemented Redux to handle user persistence and
+                shopping cart
+                <br /> - Prioritized responsive design with SASS and Flexbox
+                <br /> - Conditionally rendered admin view utilizing Express
+                Sessions
+                <br /> - Learned PostgreSQL, created databases for users and
+                merchandise
+                <br /> - Full CRUD web application
               </div>
+            </p>
+          </div>
+          <div>
+            <h3 className="subTitle" id="pTag2">
+              Mobile Responsive Web Application
             </h3>
-            <b>Technologies Implemented:</b> <br />
-            React | Redux | Node | Material UI | TypeScript | GitHub | Git{' '}
-            <br />
-            <div className="alignLeft">
-              <b> Accomplishments:</b>
-              <br /> - Built out backend server to fetch trails & weather from
-              multiple API's
-              <br /> - Implemented geolocation to find top five trails and three
-              day weather forecast
-              <br /> - Succesfully worked with a team by utilizing GitHub and
-              Agile methods
-              <br /> - Utilized TypeScript for readability of data
+            <div className="imgContainer">
+              <img className="imagesTread" src={welltreadhome} alt="" />
+              <img className="imagesTread" src={welltreadsearch} alt="" />
+              <img className="imagesTread" src={trailmap} alt="" />
             </div>
-          </p>
+
+            <p id="pTag">
+              <h3>
+                <div className="links">
+                  <a href="https://welltread.co" id="link">
+                    www.WellTread.co
+                  </a>
+
+                  <a href="https://github.com/well-tread/well-tread" id="link">
+                    GitHub Repository
+                  </a>
+                </div>
+              </h3>
+              <b>Technologies Implemented:</b> <br />
+              React | Redux | Node | Material UI | TypeScript | GitHub | Git{' '}
+              <br />
+              <div className="alignLeft">
+                <b> Accomplishments:</b>
+                <br /> - Built out backend server to fetch trails & weather from
+                multiple API's
+                <br /> - Implemented geolocation to find top five trails and
+                three day weather forecast
+                <br /> - Succesfully worked with a team by utilizing GitHub and
+                Agile methods
+                <br /> - Utilized TypeScript for readability of data
+              </div>
+            </p>
+          </div>
           {close}
         </article>
 
