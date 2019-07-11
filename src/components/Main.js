@@ -132,7 +132,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h1 className="major">Projects</h1>
-          <h3 id="pTag2" className="subTitle">
+          <h3 id="pTag" className="subTitle">
             {' '}
             E-Commerce Web Application
           </h3>
@@ -166,7 +166,7 @@ class Main extends React.Component {
               <br /> - Full CRUD web application
             </div>
           </p>
-          <h3 id="pTag" className="subTitle">
+          <h3 id="pTag2" className="subTitle">
             Mobile Responsive Web Application
           </h3>
           <div className="imgContainer">
