@@ -166,7 +166,7 @@ class Main extends React.Component {
               <br /> - Full CRUD web application
             </div>
           </p>
-          <h3 id="pTag2" className="subTitle">
+          <h3 className="subTitle" id="pTag2">
             Mobile Responsive Web Application
           </h3>
           <div className="imgContainer">
